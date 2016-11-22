@@ -29,7 +29,7 @@ get_header();?>
 				if($ticket_result !== null && $ticket_result['isError']) { 
 					echo '<div class="error-summary" role="group" aria-labelledby="error-summary-heading" tabindex="-1"><h1 class="heading-medium error-summary-heading" id="error-summary-heading">There is an issue with the information you provided</h1><p>';
 					echo $ticket_result['errorMessage']; 
-					echo '</p><p>Please correct your answers below.</p>';
+					echo '</p><p>Please correct your answers below.</p></div>';
 				}
 				get_template_part( 'template-parts/contactform');
 			}?>
