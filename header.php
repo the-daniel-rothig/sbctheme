@@ -45,7 +45,7 @@
 <script>document.body.className = ((document.body.className) ? document.body.className.replace(" js-disabled","") + ' js-enabled' : 'js-enabled');</script>
     <div id="skiplink-container">
       <div>
-        <a href="#content" class="skiplink">"Skip to main content"</a>
+        <a href="#content" class="skiplink">Skip to main content</a>
       </div>
     </div>
 
