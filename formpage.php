@@ -34,7 +34,6 @@ get_header();?>
 				get_template_part( 'template-parts/contactform');
 			}?>
 		</main><!-- .site-main -->
-		<?php get_sidebar( 'content-bottom' ); ?>
 
 	</div><!-- .content-area -->
 
