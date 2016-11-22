@@ -66,31 +66,29 @@ add_action( 'widgets_init', 'sbctheme_widgets_init' );
  */
 function sbc_scripts() {
 	wp_enqueue_style( 'twentysixteen-sbctemplatecss', get_template_directory_uri() . '/css/govuk-template.css', array(), false, 'screen');
-	//wp_style_add_data('twentysixteen-sbctemplatecss', 'conditional', 'gt IE 8');
-
-	wp_enqueue_style( 'twentysixteen-sbctemplatecss6', get_template_directory_uri() . '/css/govuk-template-ie6.css', array(), false, 'screen');
+	
+	wp_enqueue_style( 'twentysixteen-sbctemplatecss6', get_template_directory_uri() . '/css/govuk-template-ie6.css', array('twentysixteen-sbctemplatecss'), false, 'screen');
 	wp_style_add_data('twentysixteen-sbctemplatecss6', 'conditional', 'IE 6');
 
-	wp_enqueue_style( 'twentysixteen-sbctemplatecss7', get_template_directory_uri() . '/css/govuk-template-ie7.css', array(), false, 'screen');
+	wp_enqueue_style( 'twentysixteen-sbctemplatecss7', get_template_directory_uri() . '/css/govuk-template-ie7.css', array('twentysixteen-sbctemplatecss'), false, 'screen');
 	wp_style_add_data('twentysixteen-sbctemplatecss7', 'conditional', 'IE 7');
 
-	wp_enqueue_style( 'twentysixteen-sbctemplatecss8', get_template_directory_uri() . '/css/govuk-template-ie8.css', array(), false, 'screen');
+	wp_enqueue_style( 'twentysixteen-sbctemplatecss8', get_template_directory_uri() . '/css/govuk-template-ie8.css', array('twentysixteen-sbctemplatecss'), false, 'screen');
 	wp_style_add_data('twentysixteen-sbctemplatecss8', 'conditional', 'IE 8');
 
-	wp_enqueue_style( 'twentysixteen-sbctemplatecssprint', get_template_directory_uri() . '/css/govuk-template-print.css', array(), false, 'print');
+	wp_enqueue_style( 'twentysixteen-sbctemplatecssprint', get_template_directory_uri() . '/css/govuk-template-print.css', array('twentysixteen-sbctemplatecss'), false, 'print');
 
 	wp_enqueue_style( 'twentysixteen-sbctemplatecss-main', get_template_directory_uri() . '/css/main.css', array(), false, 'screen');
 
-	wp_enqueue_style( 'twentysixteen-sbctemplatefonts', get_template_directory_uri() . '/css/fonts.css', array(), false, 'all');
-	//wp_style_add_data( 'twentysixteen-sbctemplatefonts', 'conditional', 'gte IE 9');
-
-	wp_enqueue_style( 'twentysixteen-sbctemplatefontsie8', get_template_directory_uri() . '/css/fonts-ie8.css', array(), false, 'all');
+	wp_enqueue_style( 'twentysixteen-sbctemplatefonts', get_template_directory_uri() . '/css/fonts.css', array('twentysixteen-sbctemplatecss'), false, 'all');
+	
+	wp_enqueue_style( 'twentysixteen-sbctemplatefontsie8', get_template_directory_uri() . '/css/fonts-ie8.css', array('twentysixteen-sbctemplatecss'), false, 'all');
 	wp_style_add_data( 'twentysixteen-sbctemplatefontsie8', 'conditional', 'lt IE 9');
 
-	wp_enqueue_style( 'twentysixteen-sbctheme', get_template_directory_uri() . '/css/sbctheme.css', array(), false, 'all');
+	wp_enqueue_style( 'twentysixteen-sbctheme', get_template_directory_uri() . '/css/sbctheme.css', array('twentysixteen-sbctemplatecss'), false, 'all');
 
 
-	wp_enqueue_script( 'twentysixteen-sbctemplateiejs', get_template_directory_uri() . '/js/ie.js', array());
+	wp_enqueue_script( 'twentysixteen-sbctemplateiejs', get_template_directory_uri() . '/js/ie.js', array('twentysixteen-sbctemplatecss'));
 	wp_script_add_data( 'twentysixteen-sbctemplateiejs', 'conditional', 'lt IE 9');
 
 }

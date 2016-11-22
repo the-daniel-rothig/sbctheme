@@ -12,7 +12,7 @@
 
 		</div><!-- .site-content -->
 
-    <footer class="group js-footer" id="footer" role="contentinfo">
+    <div class="group js-footer" id="footer" role="contentinfo">
 
       <div class="footer-wrapper">
        
@@ -32,7 +32,7 @@
           </div>
         </div>
       </div>
-    </footer>
+    </div>
 
 
 	</div><!-- .site-inner -->

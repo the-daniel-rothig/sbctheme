@@ -52,7 +52,7 @@
     <div id="global-cookie-message">
       <p>This site uses cookies to make the site simpler. <a href="https://www.gov.uk/help/cookies">Find out more about cookies</a></p>
     </div>
-      <header role="banner" id="global-header" class="with-proposition">
+      <div role="banner" id="global-header" class="with-proposition">
       <div class="header-wrapper">
         <div class="header-global">
           <div class="header-logo">
@@ -77,7 +77,7 @@
           </div>
         </div>
       </div>
-    </header>
+    </div>
 
     <div id="global-header-bar"></div>
 
