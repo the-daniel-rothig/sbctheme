@@ -95,6 +95,8 @@ If you add a new Workflow stage or rename an existing one, you will need make su
 5. Set the Parent of the page to "SBC Complaints"
 6. Press "Publish" in the top right (you can also press "Preview" to see what the post will look like) 
 
+Note that updating the colours corresponding to Workflow stages in the Complaint status history requires modification of the `sbctheme.css` file in the Wordpress theme. 
+
 
 How to publish determination reports
 ------------------------------------
@@ -136,6 +138,7 @@ For example, in order to add a question after the final question:
 11. Press "Update" to save your changes.
 
 The HTML of the questions can be adopted from the following example
+``` 
  <fieldset class="form-group">
    <h3 id="question">Your question text goes here</h3>
    <label class="block-label" for="radio-1"><input id="radio-1" name="q6" type="radio" value="1" />Option one</label>
@@ -143,6 +146,7 @@ The HTML of the questions can be adopted from the following example
    <p class="form-block">or</p>
    <label class="block-label" for="radio-3"><input id="radio-3" name="q6" type="radio" value="-1" />Option three</label>
  </fieldset>
+```
 
 Things worth noting:
 
