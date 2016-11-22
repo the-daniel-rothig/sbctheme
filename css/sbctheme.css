@@ -1,0 +1,113 @@
+/* SBC Theme */
+/* GovUK overrides */
+
+.heading-medium .heading-secondary {
+  color: #6f777b;
+  font-size:14px;
+  line-height:1.1;
+  display:block;
+}
+
+/* Advice section navigation */
+
+.pagenav .page_item {
+  display:none;
+}
+
+.pagenav .page_item.current_page_item,
+.pagenav .page_item.current_page_item>.children>.page_item,
+.pagenav .page_item.current_page_ancestor,
+.pagenav .page_item.current_page_ancestor>.children>.page_item,
+.pagenav>.page_item {
+  font-weight: normal;
+  display:list-item;
+}
+
+
+.pagenav .page_item.current_page_item,
+.pagenav .page_item.current_page_ancestor {
+  font-weight: bold !important;
+}
+
+.pagenav ul {
+  margin-left:2em;
+}
+ul.pagenav {
+  margin-left:0;
+}
+
+/* Contact form */
+iframe {
+  position:relative;
+  left:-10px;
+}
+
+/* Complaint status */
+li.timeline {
+    display: block;
+    border-left: dotted 5px #2e358b;
+    margin: 0 0 0 15px;
+    padding-bottom: 1em;
+}
+
+.timeline .timeline-blob {
+  position:relative;
+  left: -23px;
+  top: 12px;
+  width: 40px;
+  height: 40px;
+  background-color: #2e358b;
+  display:inline-block;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+}
+
+.timeline.Initial.investigation {border-color:#2e358b;}
+.timeline.Initial.investigation .timeline-blob {background-color:#2e358b;}
+
+.timeline.Gathering.data.from.complainant {border-color:#912b88;}
+.timeline.Gathering.data.from.complainant .timeline-blob {background-color:#912b88;}
+
+.timeline.Gathering.data.from.respondent {border-color:#d53880;}
+.timeline.Gathering.data.from.respondent .timeline-blob {background-color:#d53880;}
+
+.timeline.Making.determination {border-color:#f47738;}
+.timeline.Making.determination .timeline-blob {background-color:#f47738;}
+
+.timeline.Gathering.responses.for.determination {border-color:#85994b;}
+.timeline.Gathering.responses.for.determination .timeline-blob {background-color:#85994b;}
+
+.timeline.Closed {border-color:#6f777b;}
+.timeline.Closed .timeline-blob {background-color:#6f777b;}
+
+/* Misc */
+
+dl.summary {
+  margin:0;
+  padding: 10px 3px;
+  border-bottom: solid 2px gainsboro;
+}
+dl.summary dt {
+  font-weight: bold;
+}
+
+.resolution {
+  background-color: #eee;
+  padding: 30px 30px 20px;
+  margin-top:20px;
+}
+.resolution h3 {
+  border-bottom: solid 3px #fff;
+  padding-bottom:10px;
+  margin-bottom:10px;
+  margin-top:0;
+}
+.resolution .escalationlevel {
+  float:right;
+  line-height:2.5;
+}
+.resolution a.button {
+  margin-top:0px;
+}
+
