@@ -24,19 +24,7 @@ function sbctheme_setup() {
 	add_theme_support( 'post-thumbnails' );
 	set_post_thumbnail_size( 1200, 9999 );
 
-	add_theme_support( 'post-formats', array(
-		'aside',
-		'image',
-		'video',
-		'quote',
-		'link',
-		'gallery',
-		'status',
-		'audio',
-		'chat',
-	) );
-
-	add_editor_style( array( 'css/editor-style.css' ) );
+	add_editor_style( array( 'css/editor-style.css', 'css/govuk-template.css', 'css/main.css', 'css/sbctheme.css', 'css/sbctheme_editor.css' ) );
   
 	add_theme_support( 'customize-selective-refresh-widgets' );
 }

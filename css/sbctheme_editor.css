@@ -1,0 +1,8 @@
+/* SBC Theme cosmetic helpers for the editor screen*/
+/* GovUK overrides */
+
+h1 { font-size:4em !important; } 
+h2 { font-size:3em !important; }
+h3 { font-size:1.5em !important; }
+h4 { font-weight:bold !important; }
+ul, ol {list-style: bullet; margin-left: 1.5em;}
